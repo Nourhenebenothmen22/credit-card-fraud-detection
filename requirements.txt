@@ -1,0 +1,16 @@
+
+pandas
+numpy
+scikit-learn
+imbalanced-learn
+matplotlib
+seaborn
+xgboost
+optuna
+shap
+mlflow
+joblib
+pytest
+jupyter
+ipykernel
+nbformat

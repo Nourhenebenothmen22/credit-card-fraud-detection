@@ -1,0 +1,33 @@
+cat > .gitignore << 'EOF'
+# Virtual environment
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+.coverage
+htmlcov/
+
+# Data (never commit raw/derived data; structure kept via .gitkeep)
+data/raw/*
+data/interim/*
+data/processed/*
+!data/**/.gitkeep
+
+# Model artifacts and experiment tracking
+models/*
+!models/.gitkeep
+mlruns/
+mlartifacts/
+*.joblib
+*.pkl
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+EOF
